@@ -1,13 +1,13 @@
-# 🛡️ Cyberbullying Detection System (NLP)
+# Cyberbullying Detection System (NLP)
 
 This project focuses on the automated detection and categorization of cyberbullying content on Twitter using Natural Language Processing (NLP). 
 
-## 📊 Dataset Overview
+## Dataset Overview
 The model was trained on 47,000+ labeled tweets. The distribution across categories (Religion, Age, Ethnicity, Gender, etc.) is shown below:
 
 ![Dataset Distribution](results/Dataset%20Distribution.png)
 
-## 📈 Performance & Results
+## Performance & Results
 I benchmarked multiple models to find the most accurate classifier for toxic text.
 
 ### 1. Model Comparison
