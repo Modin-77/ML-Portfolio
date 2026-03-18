@@ -10,13 +10,13 @@ This suite demonstrates a range of Deep Learning capabilities—from simple **Bi
 * **Architecture:** YOLOv8 (Nano)
 * **Task:** Detect and locate individuals with/without helmets using bounding boxes.
 * **Key Tech:** XML-to-YOLO annotation conversion, mAP evaluation.
-* **[View Project](./Helmet-Detection-YOLOv8)**
+* **[View Project](./Helmet_Detection_YOLOv8)**
 
 ### 2. Face Mask Detection (Classification)
 * **Architecture:** CNN (TensorFlow/Keras)
 * **Task:** Binary classification of 12,000+ images to verify mask compliance.
 * **Key Tech:** ImageDataGenerator for augmentation, Sigmoid activation.
-* **[View Project](./Face-Mask-Detection)**
+* **[View Project](./Face_Mask_Image_Classification)**
 
 ### 3. Garbage Classification (Multi-class)
 * **Architecture:** CNN (TensorFlow/Keras)
