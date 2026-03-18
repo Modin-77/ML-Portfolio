@@ -1,86 +1,45 @@
-
----
-
-# Garbage Classification README
-
-```markdown
 # Garbage Classification using Deep Learning
 
 ## Project Overview
-This project builds a **Deep Learning image classification model** to identify different types of garbage materials. The model helps in automatically sorting waste, which can improve **recycling efficiency and waste management systems**.
+This project implements a **Deep Learning image classification model** designed to automate the identification of various waste materials. By leveraging Computer Vision, this system aims to enhance **recycling efficiency** and streamline waste management processes.
 
 ---
 
 ## Objectives
-
-- Classify garbage images into different categories
-- Identify recyclable vs non-recyclable waste
-- Build a CNN model using TensorFlow/Keras
-- Demonstrate environmental applications of computer vision
+* **Automated Sorting:** Classify garbage images into 6 distinct categories.
+* **Environmental Impact:** Distinguish between recyclable and non-recyclable materials.
+* **Deep Learning Pipeline:** Build, train, and evaluate a custom CNN using **TensorFlow/Keras**.
 
 ---
 
 ## Dataset
-
-Dataset: **Garbage Classification Dataset**
-
-Categories include:
-
-- Cardboard
-- Glass
-- Metal
-- Paper
-- Plastic
-- Trash
-
-Dataset Link: https://www.kaggle.com/datasets/asdasdasasdas/garbage-classification
-
+The model is trained on the [Garbage Classification Dataset](https://www.kaggle.com/datasets/asdasdasasdas/garbage-classification), which includes:
+* **Categories:** Cardboard, Glass, Metal, Paper, Plastic, and Trash.
+* **Preprocessing:** Includes image resizing (128x128), pixel normalization, and real-time data augmentation.
 
 ---
 
-## Methodology
+## Model Architecture
+The system utilizes a Sequential **Convolutional Neural Network (CNN)** optimized for feature extraction:
 
-### Data Preprocessing
 
-Steps include:
 
-- Image resizing
-- Normalization
-- Data augmentation
-- Train/validation split
-
----
-
-### Model Architecture
-
-Input Image
-↓
-Conv2D
-↓
-MaxPooling
-↓
-Conv2D
-↓
-MaxPooling
-↓
-Flatten
-↓
-Dense Layer
-↓
-Output Layer (Garbage Category)
-
+1.  **Input Layer:** 128x128 RGB images.
+2.  **Feature Extraction:** Multiple `Conv2D` layers with `ReLU` activation followed by `MaxPooling2D` to reduce spatial dimensions.
+3.  **Classification:** `Flatten` layer leading into a `Dense` hidden layer with **Dropout** for regularization.
+4.  **Output Layer:** `Dense` layer with **Softmax** activation for multi-class probability.
 
 ---
 
 ## Technologies Used
-
-- Python
-- TensorFlow / Keras
-- NumPy
-- Matplotlib
-- Scikit-learn
-- KaggleHub
-- Jupyter Notebook
+* **Deep Learning:** TensorFlow, Keras
+* **Data Processing:** NumPy, Scikit-learn, Pandas
+* **Visualization:** Matplotlib
+* **Environment:** Jupyter Notebook, KaggleHub
 
 ---
 
+## How to Use
+1. **Clone the repository** and navigate to the project folder.
+2. **Install dependencies**: `pip install tensorflow numpy matplotlib`.
+3. **Run the notebook**: Open `Garbage_Classification.ipynb` and execute cells to train or run inference.
